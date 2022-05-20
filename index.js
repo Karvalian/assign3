@@ -32,15 +32,7 @@ app.use(async (context, next) => {
 app.use(router.routes())
 app.use(router.allowedMethods())
 //MySQL login
-function Send_Data(){
-	var name=document.getElementById("name").value;
-	var password=document.getElementById("pwd").value;
-	var httpr=new XMLHttpRequest();
-	httpr.open("POST", "");
-	
 
-
-}
 // static content
 app.use(async (context, next) => {
 	const root = `${Deno.cwd()}/public`
